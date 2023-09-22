@@ -1,24 +1,22 @@
 <script>
+import AppHeader from './components/AppHeader.vue';
 export default {
-
-  name: 'App',
-  data() {
-    return {
-
+    name: 'App',
+    data() {
+        return {
+            message: 'ello'
+        }
+    },
+    components: {
+        AppHeader
     }
-  },
-  components: {
-
-  }
 
 }
 
 </script>
 
 <template>
-  <button class="btn btn-primary"> we </button>
+    <AppHeader />
 </template>
 
-<style lang="scss">
-@use './assets/scss/app.scss';
-</style>
+<style lang="scss"></style>
