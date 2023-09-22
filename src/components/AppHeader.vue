@@ -72,7 +72,7 @@ export default {
             </div>
             <ul class="list-unstyled d-flex gap-4">
 
-                <li v-for="(link, i) in links">
+                <li v-for="(link, i) in links" class="fw-bold">
                     <a href="#" @click="changeActive(i)" :class="(i == activeLink ? 'active' : '')">{{ link.nomeLink }}</a>
                 </li>
 

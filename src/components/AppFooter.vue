@@ -15,6 +15,17 @@ export default {
 
 </script>
 
-<template></template>
+<template>
+    <footer>
 
-<style lang="scss"></style>
+    </footer>
+</template>
+
+<style lang="scss">
+@use '../assets/scss/partials/variables' as *;
+
+footer {
+    background-color: aqua;
+    height: 100px;
+}
+</style>
