@@ -51,9 +51,7 @@ export default {
 
         }
     },
-    components: {
 
-    },
     methods: {
         changeActive(i) {
             this.activeLink = i
