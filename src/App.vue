@@ -1,9 +1,24 @@
 <script>
+export default {
+
+  name: 'App',
+  data() {
+    return {
+
+    }
+  },
+  components: {
+
+  }
+
+}
 
 </script>
 
 <template>
-  <h1>we</h1>
+  <button class="btn btn-primary"> we </button>
 </template>
 
-<style></style>
+<style lang="scss">
+@use './assets/scss/app.scss';
+</style>
