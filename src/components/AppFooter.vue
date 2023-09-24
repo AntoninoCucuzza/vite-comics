@@ -1,6 +1,5 @@
 <script>
 export default {
-
     name: 'AppFooter',
     data() {
         return {
@@ -118,8 +117,6 @@ export default {
             ]
         }
     },
-
-
 }
 
 </script>
@@ -166,7 +163,6 @@ export default {
             </div>
 
         </div>
-
     </footer>
 </template>
  

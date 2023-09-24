@@ -27,7 +27,7 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 main {
-    height: 200px;
+    height: 470px;
     background-color: $dc_main_dark;
 }
 </style>
