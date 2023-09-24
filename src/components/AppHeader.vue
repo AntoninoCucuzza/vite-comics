@@ -79,7 +79,7 @@ export default {
     </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 
 #app_header {

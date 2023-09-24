@@ -23,7 +23,7 @@ export default {
     </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../assets/scss/partials/variables' as *;
 
 main {
