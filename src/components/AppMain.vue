@@ -1,4 +1,6 @@
 <script>
+import AppMainJumbo from './AppMainJumbo.vue'
+import AppComics from './AppComics.vue'
 export default {
 
     name: 'AppMain',
@@ -8,7 +10,8 @@ export default {
         }
     },
     components: {
-
+        AppMainJumbo,
+        AppComics
     }
 
 }
@@ -16,6 +19,8 @@ export default {
 </script>
 
 <template>
+    <AppMainJumbo />
+    <AppComics />
     <main class="d-flex justify-content-between align-items-center ">
         <div class="container">
             <h1 class="text-white text-center"> (☞ﾟヮﾟ)☞ content here ☜(ﾟヮﾟ☜) </h1>
@@ -27,7 +32,7 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 main {
-    height: 470px;
+
     background-color: $dc_main_dark;
 }
 </style>
