@@ -1,13 +1,13 @@
 <script>
 import AppJumbotron from './AppJumbotron.vue'
 import AppComicsCard from './AppComicsCard.vue'
-import comics from '../comics.js'
+import comicss from '../comicss.js'
 export default {
 
     name: 'AppMain',
     data() {
         return {
-            comics
+            comicss
         }
     },
     components: {
@@ -24,7 +24,7 @@ export default {
     <main class="d-flex justify-content-between align-items-center ">
         <div class="container">
             <div class="row">
-                <AppComicsCard v-for="product in comics" :thumb="product.thumb" :series="product.series" />
+                <AppComicsCard v-for="product in comicss" :thumb="product.thumb" :series="product.series" />
             </div>
             <div class="d-flex justify-content-center align-items-center">
                 <a href="#">load more</a>
