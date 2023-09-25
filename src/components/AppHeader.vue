@@ -6,7 +6,7 @@ export default {
 
         return {
             logo: '../assets/img/dc-logo.png',
-            activeLink: 0,
+            activeLink: 1,
             links: [
                 {
                     nomeLink: 'characters'

@@ -1,17 +1,18 @@
 <script>
-import AppMainJumbo from './AppMainJumbo.vue'
-import AppComics from './AppComics.vue'
+import AppJumbotron from './AppJumbotron.vue'
+import AppComicsCard from './AppComicsCard.vue'
+import comics from '../comics.js'
 export default {
 
     name: 'AppMain',
     data() {
         return {
-
+            comics
         }
     },
     components: {
-        AppMainJumbo,
-        AppComics
+        AppJumbotron,
+        AppComicsCard,
     }
 
 }
@@ -19,11 +20,15 @@ export default {
 </script>
 
 <template>
-    <AppMainJumbo />
-    <AppComics />
+    <AppJumbotron />
     <main class="d-flex justify-content-between align-items-center ">
         <div class="container">
-            <h1 class="text-white text-center"> (☞ﾟヮﾟ)☞ content here ☜(ﾟヮﾟ☜) </h1>
+            <div class="row">
+                <AppComicsCard v-for="product in comics" :thumb="product.thumb" :series="product.series" />
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="#">load more</a>
+            </div>
         </div>
     </main>
 </template>
@@ -32,7 +37,17 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 main {
-
+    padding: 2rem;
+    padding-top: 4rem;
     background-color: $dc_main_dark;
+
+    a {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        background-color: $dc_primary;
+        border: 2px solid $dc_primary;
+        padding: 0.5rem 2rem;
+    }
 }
 </style>
