@@ -22,7 +22,7 @@ export default {
 @use '../assets/scss/partials/variables' as *;
 
 .jumbotron {
-    height: 400px;
+    height: 500px;
     background-image: url(../assets/img/jumbotron.jpg);
     background-position: top;
     background-size: cover;

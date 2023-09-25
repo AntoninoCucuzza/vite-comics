@@ -2,7 +2,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue'
-import AppFooterTop from './components/AppFooterTop.vue'
+import AppFooterTope from './components/AppFooterTope.vue'
 import AppFooterBot from './components/AppFooterBot.vue'
 
 
@@ -17,7 +17,7 @@ export default {
     components: {
         AppHeader,
         AppMain,
-        AppFooterTop,
+        AppFooterTope,
         AppFooter,
         AppFooterBot
     }
@@ -29,7 +29,7 @@ export default {
 <template>
     <AppHeader />
     <AppMain />
-    <AppFooterTop />
+    <AppFooterTope />
     <AppFooter />
     <AppFooterBot />
 </template>
